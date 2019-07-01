@@ -7,17 +7,26 @@ for (let i = 0; i < modals.length; i++) {
     let img = document.getElementById(`myImg${i}`);
     let modalImg = document.getElementById(`img${i}`);
     let captionText = document.getElementById(`caption${i}`);
+    let projectDescription = document.getElementById(`project-description${i}`)
+
     img.onclick = function(){
       modal.style.display = "block";
       modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
+      console.log(projectDescription.textContent)
+      let msg = `
+      ${this.alt} <br>
+      ${projectDescription.innerHTML}
+      `
+
+      captionText.innerHTML = msg;
     }
     
     // Get the <span> element that closes the modal
-    let span = document.getElementsByClassName("close")[i];
+    /* let span = document.getElementsByClassName("close")[i]; */
     
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
+    modal.onclick = function() { 
       modal.style.display = "none";
     }
+    
 }
