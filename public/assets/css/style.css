@@ -129,6 +129,44 @@ a:hover {
 }
 
 
+/****************** media query for header ************/
+@media screen and (max-width: 768px) {
+  header {
+    height: 600px;
+    text-align: center;
+  }
+  .header {
+    padding: 5%;
+  }
+  .navbar {
+    display: none;
+  }
+  .header-intro {
+    padding: 0 5%;
+  }
+
+  .header-text h1 {
+    font-size: 3rem;
+  }
+
+  .header-avatar {
+    padding-top: 10px;
+  }
+
+  .avatar img {
+    width: 12rem;
+  }
+
+  li.icon {
+    margin: 4px 7px;
+  }
+
+  .project-text {
+    font-size: 1.8rem;
+  }
+
+}
+
 /**************** modal image ***************/
 .project img {
   border-radius: 5px 5px 0 0;
@@ -326,6 +364,36 @@ figure figcaption {
   background: url("/assets/images/story.jpg");
   background-size: cover;
   background-position: 35% 10%;
+}
+
+
+/********************* project and story section media query ****************/
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  section {
+    padding: 3% 2%;
+  }
+
+  .project-section {
+    padding: 3%;
+  }
+
+  div.story-image {
+    height: 300px !important;
+  }
+
+  div.story-text {
+    height: 450px;
+  }
+
+  .caption {
+    margin: auto;
+  }
 }
 
 /************** footer **********************/
